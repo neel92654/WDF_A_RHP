@@ -4,18 +4,67 @@
     <meta charset="UTF-8">
     <title>Events</title>
     <style>
-        table, tr, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-            padding: 10px;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
         }
+
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+
+        div a {
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+        }
+
+        div a:hover {
+            color: blue;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #d9d9d9;
+        }
+
+        input[type="submit"] {
+            padding: 6px 12px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: darkblue;
+        }
+
     </style>
 </head>
-
 <body>
-
     <br>
-    <h1 style="text-align:center; font-family:sans-serif; color:blue;">CHARUSAT STUDENT HUB</h1>
+    <h1>CHARUSAT STUDENT HUB</h1>
     <div style="text-align:center;">
         <img src="../images/image.png" alt="Charusat Logo" width="200" height="50">
     </div>
@@ -27,38 +76,50 @@
         <a href="courses.html">Courses</a> |
         <a href="timetable.html">Timetable</a> |
         <a href="announcements.html">Announcements</a> |
-        <a href="events.html">Events</a> |
+        <b>Events</b> |
         <a href="profile.html">Profile</a> |
         <a href="settings.html">Settings</a>
     </div>
     <br>
-    <div style="border:2px solid black; width:700px; margin:auto; padding:20px;">
+    <div style="border:2px solid black; width:850px; margin:auto; padding:20px; background-color:white; border-radius:8px; box-shadow:3px 3px 8px gray;">
         <h2 style="text-align:center;">Upcoming Events</h2>
-        <table style="width:100%;">
+        <p><b>Name:</b> Neel Patel</p>
+        <table>
             <tr>
                 <th>Event</th>
                 <th>Date</th>
                 <th>Venue</th>
+                <th>Registration</th>
             </tr>
             <tr>
-                <td>Hackathon</td>
-                <td>25 July</td>
+                <td>Hackathon 2026</td>
+                <td>25 July 2026</td>
                 <td>Seminar Hall</td>
+                <td><input type="submit" value="Register"></td>
             </tr>
             <tr>
                 <td>Coding Competition</td>
-                <td>28 July</td>
-                <td>Class 329</td>
+                <td>30 July 2026</td>
+                <td>Computer Lab 2</td>
+                <td><input type="submit" value="Register"></td>
             </tr>
             <tr>
                 <td>Technical Seminar</td>
-                <td>30 July</td>
-                <td>Auditorium</td>
+                <td>02 August 2026</td>
+                <td>Main Auditorium</td>
+                <td><input type="submit" value="Register"></td>
             </tr>
             <tr>
-                <td>Sports Fest</td>
-                <td>5 August</td>
+                <td>Sports Meet</td>
+                <td>10 August 2026</td>
                 <td>Sports Ground</td>
+                <td><input type="submit" value="Register"></td>
+            </tr>
+            <tr>
+                <td>Cultural Fest</td>
+                <td>18 August 2026</td>
+                <td>Open Air Theatre</td>
+                <td><input type="submit" value="Register"></td>
             </tr>
         </table>
     </div>

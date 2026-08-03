@@ -1,23 +1,57 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <title>Timetable</title>
     <style>
-        table, tr, th, td {
-            border: 1px solid black;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+
+        div a {
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+        }
+
+        div a:hover {
+            color: blue;
+        }
+
+        table {
+            width: 100%;
             border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
             padding: 10px;
             text-align: center;
         }
+
+        th {
+            background-color: #d9d9d9;
+        }
+
     </style>
 </head>
-
 <body>
-
     <br>
-    <h1 style="text-align:center; font-family:sans-serif; color:blue;">CHARUSAT STUDENT HUB</h1>
+    <h1>CHARUSAT STUDENT HUB</h1>
     <div style="text-align:center;">
         <img src="../images/image.png" alt="Charusat Logo" width="200" height="50">
     </div>
@@ -27,59 +61,61 @@
         <a href="attendance.html">Attendance</a> |
         <a href="assignments.html">Assignments</a> |
         <a href="courses.html">Courses</a> |
-        <a href="timetable.html">Timetable</a> |
+        <b>Timetable</b> |
         <a href="announcements.html">Announcements</a> |
         <a href="events.html">Events</a> |
         <a href="profile.html">Profile</a> |
         <a href="settings.html">Settings</a>
     </div>
     <br>
-    <div style="border:2px solid black; width:900px; margin:auto; padding:20px;">
+    <div style="border:2px solid black; width:900px; margin:auto; padding:20px; background-color:white; border-radius:8px; box-shadow:3px 3px 8px gray;">
         <h2 style="text-align:center;">Weekly Timetable</h2>
         <p><b>Name:</b> Neel Patel</p>
-        <table style="width:100%;">
-            <tr>
-                <th>Day</th>
-                <th>9:10 - 10:10</th>
-                <th>10:10 - 11:10</th>
-                <th>11:20 - 12:20</th>
-                <th>1:10 - 2:10</th>
-            </tr>
-            <tr>
-                <td>Monday</td>
-                <td>WDF</td>
-                <td>FDSA</td>
-                <td>OOP</td>
-                <td>DM</td>
-            </tr>
-            <tr>
-                <td>Tuesday</td>
-                <td>DM</td>
-                <td>WDF</td>
-                <td>OOP</td>
-                <td>FDSA</td>
-            </tr>
-            <tr>
-                <td>Wednesday</td>
-                <td>FDSA</td>
-                <td>OOP</td>
-                <td>WDF</td>
-                <td>DM</td>
-            </tr>
-            <tr>
-                <td>Thursday</td>
-                <td>OOP</td>
-                <td>DM</td>
-                <td>FDSA</td>
-                <td>WDF</td>
-            </tr>
-            <tr>
-                <td>Friday</td>
-                <td>WDF</td>
-                <td>DM</td>
-                <td>FDSA</td>
-                <td>OOP</td>
-            </tr>
+        <table>
+        <tr>
+            <th>Day</th>
+            <th>9:10 - 10:10</th>
+            <th>10:10 - 11:10</th>
+            <th>11:10 - 12:10</th>
+            <th>12:10 - 1:10</th>
+            <th>1:10 - 2:10</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>WDF</td>
+            <td>FDSA</td>
+            <td rowspan="5" style="font-weight:bold; background-color:#f0f0f0;">Lunch Break</td>
+            <td>OOP</td>
+            <td>DM</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>DM</td>
+            <td>WDF</td>
+            <td>OOP</td>
+            <td>FDSA</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>FDSA</td>
+            <td>OOP</td>
+            <td>WDF</td>
+            <td>DM</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>OOP</td>
+            <td>DM</td>
+            <td>FDSA</td>
+            <td>WDF</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>WDF</td>
+            <td>DM</td>
+            <td>FDSA</td>
+            <td>OOP</td>
+        </tr>
         </table>
     </div>
 </body>

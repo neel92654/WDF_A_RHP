@@ -1,15 +1,70 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <title>Settings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+
+        div a {
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+        }
+
+        div a:hover {
+            color: blue;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table,
+        tr,
+        td {
+            border: 1px solid black;
+        }
+
+        td {
+            padding: 12px;
+        }
+
+        input[type="password"],
+        select {
+            width: 95%;
+            padding: 6px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 8px 18px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: darkblue;
+        }
+    </style>
 </head>
-
 <body>
-
     <br>
-    <h1 style="text-align:center; font-family:sans-serif; color:blue;">CHARUSAT STUDENT HUB</h1>
+    <h1>CHARUSAT STUDENT HUB</h1>
     <div style="text-align:center;">
         <img src="../images/image.png" alt="Charusat Logo" width="200" height="50">
     </div>
@@ -23,36 +78,50 @@
         <a href="announcements.html">Announcements</a> |
         <a href="events.html">Events</a> |
         <a href="profile.html">Profile</a> |
-        <a href="settings.html">Settings</a>
+        <b>Settings</b>
     </div>
     <br>
-    <div style="border:2px solid black; width:550px; margin:auto; padding:20px;">
-        <h2 style="text-align:center;">Settings</h2>
+    <div style="border:2px solid black; width:700px; margin:auto; padding:20px; background-color:white; border-radius:8px; box-shadow:3px 3px 8px gray;">
+        <h2 style="text-align:center;">Account Settings</h2>
         <form>
-            <label>
-                <input type="checkbox" checked>
-                Receive Notifications
-            </label>
-            <br><br>
-            <label>
-                <input type="checkbox">
-                Enable Dark Mode
-            </label>
-            <br><br>
-            <label>Language</label>
+            <table>
+                <tr>
+                    <td><b>Change Password</b></td>
+                    <td><input type="password" placeholder="Enter New Password"></td>
+                </tr>
+                <tr>
+                    <td><b>Confirm Password</b></td>
+                    <td><input type="password" placeholder="Confirm Password"></td>
+                </tr>
+                <tr>
+                    <td><b>Language</b></td>
+                    <td>
+                        <select>
+                            <option>English</option>
+                            <option>Hindi</option>
+                            <option>Gujarati</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Email Notifications</b></td>
+                    <td>
+                        <input type="checkbox" checked> Enable
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>SMS Notifications</b></td>
+                    <td>
+                        <input type="checkbox"> Enable
+                    </td>
+                </tr>
+            </table>
             <br>
-            <select>
-                <option>English</option>
-                <option>Hindi</option>
-                <option>Gujarati</option>
-            </select>
-            <br><br>
-            <label>Change Password</label>
-            <br>
-            <input type="password" placeholder="New Password">
-            <br><br>
-            <input type="submit" value="Save Changes">
-            <input type="reset" value="Reset">
+            <div style="text-align:center;">
+                <input type="submit" value="Save Changes">
+                &nbsp;&nbsp;
+                <input type="reset" value="Reset">
+            </div>
         </form>
     </div>
 </body>

@@ -1,22 +1,71 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <title>Profile</title>
     <style>
-        table, tr, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-            padding: 10px;
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
         }
+
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+
+        div a {
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+        }
+
+        div a:hover {
+            color: blue;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table,
+        tr,
+        td {
+            border: 1px solid black;
+        }
+
+        td {
+            padding: 12px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 95%;
+            padding: 6px;
+        }
+
+        input[type="submit"] {
+            padding: 8px 18px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: darkblue;
+        }
+
     </style>
 </head>
-
 <body>
-
     <br>
-    <h1 style="text-align:center; font-family:sans-serif; color:blue;">CHARUSAT STUDENT HUB</h1>
+    <h1>CHARUSAT STUDENT HUB</h1>
     <div style="text-align:center;">
         <img src="../images/image.png" alt="Charusat Logo" width="200" height="50">
     </div>
@@ -29,54 +78,48 @@
         <a href="timetable.html">Timetable</a> |
         <a href="announcements.html">Announcements</a> |
         <a href="events.html">Events</a> |
-        <a href="profile.html">Profile</a> |
+        <b>Profile</b> |
         <a href="settings.html">Settings</a>
     </div>
     <br>
-    <div style="border:2px solid black; width:650px; margin:auto; padding:20px;">
+    <div style="border:2px solid black; width:700px; margin:auto; padding:20px; background-color:white; border-radius:8px; box-shadow:3px 3px 8px gray;">
         <h2 style="text-align:center;">Student Profile</h2>
         <div style="text-align:center;">
-            <img src="../images/profile.png" alt="Profile Picture" width="120" height="120">
+            <img src="../images/profile.png" alt="Profile Photo" width="120" height="120" style="border-radius:50%; border:2px solid black;">
         </div>
         <br>
-        <table style="width:100%;">
-
-            <tr>
-                <td><b>Name</b></td>
-                <td>Neel Patel</td>
-            </tr>
-
-            <tr>
-                <td><b>Enrollment ID</b></td>
-                <td>25DCE087</td>
-            </tr>
-            <tr>
-                <td><b>Department</b></td>
-                <td>Computer Engineering</td>
-            </tr>
-            <tr>
-                <td><b>Semester</b></td>
-                <td>3</td>
-            </tr>
-
-            <tr>
-                <td><b>Email</b></td>
-                <td>25dce087@charusat.edu.in</td>
-            </tr>
-            <tr>
-                <td><b>Phone No.</b></td>
-                <td>8780145164</td>
-            </tr>
-
-            <tr>
-                <td><b>Blood Group</b></td>
-                <td>A+</td>
-            </tr>
-            <tr>
-                <td><b>Address</b></td>
-                <td>Anand, Gujarat</td>
-            </tr>
-        </table>
+        <form>
+            <table>
+                <tr>
+                    <td><b>Name</b></td>
+                    <td><input type="text" value="Neel Patel"></td>
+                </tr>
+                <tr>
+                    <td><b>Enrollment No.</b></td>
+                    <td><input type="text" value="25DCE087"></td>
+                </tr>
+                <tr>
+                    <td><b>Department</b></td>
+                    <td><input type="text" value="Computer Engineering"></td>
+                </tr>
+                <tr>
+                    <td><b>Semester</b></td>
+                    <td><input type="text" value="3"></td>
+                </tr>
+                <tr>
+                    <td><b>Email</b></td>
+                    <td><input type="email" value="25dce087@charusat.edu.in"></td>
+                </tr>
+                <tr>
+                    <td><b>Phone Number</b></td>
+                    <td><input type="tel" value="8780145164"></td>
+                </tr>
+            </table>
+            <br>
+            <div style="text-align:center;">
+                <input type="submit" value="Update Profile">
+            </div>
+        </form>
     </div>
 </body>
 </html>
